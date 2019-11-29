@@ -152,6 +152,26 @@ Media.prototype.resumeRecord = function() {
     exec(null, this.errorCallback, "Media", "resumeRecordingAudio", [this.id]);
 };
 
+// ==========================================================================
+// AudioRecord Library
+// ==========================================================================
+
+/**
+ * Start recording audio file.
+ */
+Media.prototype.startAudioRecord = function() {
+    exec(null, this.errorCallback, "Media", "startAudioRecording", [this.id, this.src]);
+};
+
+/**
+ * Stop recording audio file.
+ */
+Media.prototype.stopAudioRecord = function() {
+    exec(null, this.errorCallback, "Media", "stopAudioRecording", [this.id]);
+};
+
+// ==========================================================================
+
 /**
  * Release the resources.
  */

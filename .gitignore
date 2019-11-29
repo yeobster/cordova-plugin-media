@@ -19,6 +19,9 @@ bin
 .project
 .classpath
 
+# custom
+.history
+reference
 
 
 
